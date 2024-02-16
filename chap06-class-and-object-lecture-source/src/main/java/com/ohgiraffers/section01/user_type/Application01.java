@@ -59,6 +59,39 @@ public class Application01 {
         *   관리할 수 있도록 공간을 생성한 것이다.
         *   heap 이라는 공간에 생성되기 때문에 jvm 이 제공하는 기본값들로 초기화 된다. */
 
+        /* 필기.
+        *   필드에 접근하기 위해서는 래퍼런스변수명.필드명 <- 이렇게 접근한다.
+        *   '.' 참조연산자 라고 하는데, 래퍼런스 변수가 참조하고 있는 주소로 접근한다 라는 의미.
+        *   각 공간은 필드명으로 접근한다.
+        *  */
+
+        System.out.println("member.id : " + member.id);
+        System.out.println("member.pwd : " + member.pwd);
+        System.out.println("member.name : " + member.name);
+        System.out.println("member.age : " + member.age);
+        System.out.println("member.gender : " + member.gender);
+        System.out.println("member.hobby : " + member.hobby);
+
+        /* 목차. 2-3. 필드에 접근해서 변수 사용하듯 사용해보기 */
+        member.id = "user01";
+        member.pwd = "pass01";
+        member.name = "조평훈";
+        member.age = 20;
+        member.gender = '남';
+        member.hobby = new String[] {"축구", "볼링", "테니스"};
+
+        System.out.println("변경 후 member.id : " + member.id);
+        System.out.println("변경 후 member.pwd : " + member.pwd);
+        System.out.println("변경 후 member.name : " + member.name);
+        System.out.println("변경 후 member.age : " + member.age);
+        System.out.println("변경 후 member.gender : " + member.gender);
+        System.out.print("변경 후 member.hobby : ");
+        for(int i = 0; i < member.hobby.length; i++) {
+            System.out.println(member.hobby[i] + " ");
+        }
+
+        System.out.println();
+
     }
 
 }
