@@ -60,11 +60,21 @@ public class User {
     /* 목차. 3. 모든 필드를 초기화 하는 생성자 */
     public User(String id, String pwd, String name, java.util.Date enrollDate) {
 
-        this.id = id;
-        this.pwd = pwd;
-        this.name = name;
-        this.enrollDate = enrollDate;
+        /* 목차. 3-1. 각 필드에 접근하여 초기화 */
+//        this.id = id;
+//        this.pwd = pwd;
+//        this.name = name;
+//        this.enrollDate = enrollDate;
 
+        /* 목차. 3-2. 사전에 작성되어 있는 다른 생성자 함수를 이용하여 초기화 <- 잘 안 쓰임 */
+        /* 필기.
+        *   this() 사용하기
+        *   this() 는 동일 클래스 내에 작성한 다른 생성자 메소드를 호출하는 구문이다.
+        *   괄호 안에 매개변수의 타입, 갯수, 순서에 맞는 생성자를 호출하고 복귀한다.(메소드와 동일)
+        *   this() 는 가장 첫 줄에 선언해야 하며, 그렇지 않는 경우 Compile Error가 발생한다.
+        *  */
+        this(id, pwd, name);    // 미리 작성한 세 개의 필드를 초기화 하는 생성자로 매개변수로 받은 값을 전달.
+        this.enrollDate = enrollDate;
         System.out.println("User 클래스의 모든 필드를 초기화 하는 생성자 호출함...");
 
     }
