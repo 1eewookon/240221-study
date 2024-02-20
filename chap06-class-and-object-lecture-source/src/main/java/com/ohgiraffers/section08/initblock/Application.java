@@ -35,6 +35,16 @@ public class Application {
         /* 목차. 3. 초기화블럭으로 필드 초기화 확인 */
         System.out.println(product.getInfo());
 
+        /* 목차. 4. 매개변수 있는 생성자를 이용한 초기화 확인 */
+        Product product2 = new Product("대륙폰", 3000, "샤우미");
+        System.out.println(product2.getInfo());
+
+        /* 필기.
+        *   여기서 알 수 있는 초기화 순서는
+        *   인스턴스 변수 : 기본값 -> 명시적 초기값 -> 인스턴스 초기화 블럭 -> 생성자
+        *   클래스 변수 : 기본값 -> 명시적 초기값 -> 정적 초기화 블럭 -> 인스턴스 초기화 블럭 -> 생성자
+        *  */
+
     }
 
 }
