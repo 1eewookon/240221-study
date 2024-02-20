@@ -32,6 +32,9 @@ public class Application {
         /* 목차. 2. 명시적 초기화로 필드 초기화 확인 */
         System.out.println(product.getInfo());
 
+        /* 목차. 3. 초기화블럭으로 필드 초기화 확인 */
+        System.out.println(product.getInfo());
+
     }
 
 }
