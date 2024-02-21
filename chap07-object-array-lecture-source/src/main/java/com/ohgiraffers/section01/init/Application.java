@@ -39,6 +39,20 @@ public class Application {
             carArray[i].driveMaxSpeed();
         }
 
+        /* 필기. 객체배열도 마찬가지로 할당과 동시에 초기화를 할 수 있다. */
+        Car[] carArray2 = {
+                new Car("페라리", 300)
+              , new Car("람보르기니", 350)
+              , new Car("롤스로이스", 250)
+              , new Car("부가티", 400)
+              , new Car("맥모닝", 500)
+        };
+
+        // 향상된 for문도 사용이 가능하다.
+        for(Car c : carArray2) {
+            c.driveMaxSpeed();
+        }
+
     }
 
 }
