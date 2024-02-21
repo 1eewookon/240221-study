@@ -56,6 +56,28 @@ public class Application {
         *   객체지향 프로그램이다.
         *  */
 
+        /* 목차. 1. Car 인스턴스 생성 후 메소드 호출 */
+        Car car = new Car();
+
+        car.soundHorn();
+        car.run();
+        car.soundHorn();
+        car.stop();
+        car.soundHorn();
+
+        /* 목차. 2. FireCar 인스턴스 생성 후 Car 클래스에 작성한 메소드 사용 가능 확인. */
+        FireCar fireCar = new FireCar();
+
+        /* 필기. 우리는 분명 아무것도 작성하지 않았는데 Car(부모)클래스가 가진 메소드를 사용했다. */
+        fireCar.soundHorn();
+        fireCar.run();
+        fireCar.soundHorn();
+        fireCar.stop();
+        fireCar.soundHorn();
+
+        /* 목차. 3. 상속은 확장이다. 추가적인 기능도 작성할 수 있다. */
+        fireCar.sprayWater();
+
     }
 
 }

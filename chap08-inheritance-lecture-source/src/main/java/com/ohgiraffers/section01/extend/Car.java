@@ -31,7 +31,7 @@ public class Car {
     }
 
     // Car 가 달리는 상황은 본인만 컨트롤 할 수 있다.(의인화)
-    private boolean isRunning() {
+    protected boolean isRunning() {
 
         // 자동차의 주행 중 상태를 반환할 수 있는 기능을 수행할 수 있다.
         return runningStatus;
