@@ -34,7 +34,7 @@ public class Application {
         System.out.println(computer2.getInfo());
 
         // Computer 부모필드 까지 전부 초기화하는 생성자
-        Computer computer3 = new Computer("A-1234", "삼송", "갠연시2", 20000, new java.util.Date(),
+        Computer computer3 = new Computer("A-1234", "삼송", "갠역시2", 20000, new java.util.Date(),
                 "i9", 512, 32, "윈도우");
         System.out.println(computer3.getInfo());
 
