@@ -50,6 +50,16 @@ public class Application01 {
         /* 필기. length() : 문자열의 길이를 정수형으로 반환 */
         System.out.println("length() : " + caseStr.length());
 
+        /* 필기. replace() : 문자열에서 대체할 문자열로 기존 문자열을 변경해서 반환, 원본에는 영향 x */
+        String javaoracle = "javaoracle";
+
+        System.out.println("replace() : " + javaoracle.replace("java", "python"));
+
+        /* 필기. isEmpty() : 문자열의 길이가 0이면 true, 아니면 false 반환 */
+        System.out.println("isEmpty() : " + "".isEmpty());
+        System.out.println("isEmpty() : " + "abs".isEmpty());
+
+
     }
 
 }
