@@ -50,6 +50,21 @@ public class Application01 {
 
         // 생성자를 이용해 생성한 인스턴스의 경우 == 로 비교가 불가능 하다. (박싱)
         // 단 오토 박싱을 이용해서 생성한 값은 == 로 비교가 가능하다.
+        System.out.println("integer 와 integer 비교 : " + (integerNum1 == integerNum2));
+        System.out.println("integer 와 integer 비교 : " + (integerNum1 == integerNum3));
+        System.out.println("integer 와 integer 비교 : " + (integerNum3 == integerNum4));
+
+        /* 필기. 래퍼클래스 타입의 인스턴스를 비교할 때는 equals() 를 사용해야 한다. */
+        System.out.println("equals() : " + (integerNum1.equals(integerNum2)));
+        System.out.println("equals() : " + (integerNum1.equals(integerNum3)));
+        System.out.println("equals() : " + (integerNum3.equals(integerNum4)));
+
+
+        /* 필기. valueOf() 를 이용해서 인스턴스를 생성하는 것을 권장한다,
+        *       valueOf() 는 동일한 값이 동일한 인스턴스임을 보장한다.
+        *  */
+
+        System.out.println("valueOf() : " + (Integer.valueOf(123) == Integer.valueOf(123)));
 
     }
 
