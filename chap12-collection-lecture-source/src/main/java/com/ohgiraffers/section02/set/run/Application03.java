@@ -27,7 +27,7 @@ public class Application03 {
         /* 로또 번호 발생 */
         Set<Integer> lotto = new TreeSet<>();
 
-        while (lotto.size() < 7) {
+        while (lotto.size() < 6) {
 
             lotto.add((int) (Math.random() * 45) + 1);
         }
