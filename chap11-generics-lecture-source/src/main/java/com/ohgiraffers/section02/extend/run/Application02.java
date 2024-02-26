@@ -31,6 +31,11 @@ public class Application02 {
         wildCardFarm.extendsType(new RabbitFarm<Bunny>(new Bunny()));
         wildCardFarm.extendsType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
 
+        /* Bunny 이거나 Bunny 의 부모들만 매개변수로 사용 가능하다. */
+        wildCardFarm.superType(new RabbitFarm<Rabbit>(new Rabbit()));
+        wildCardFarm.superType(new RabbitFarm<Bunny>(new Bunny()));
+//        wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+
     }
 
 }
