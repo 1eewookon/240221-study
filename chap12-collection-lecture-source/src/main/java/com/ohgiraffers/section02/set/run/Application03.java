@@ -1,5 +1,6 @@
 package com.ohgiraffers.section02.set.run;
 
+import java.util.Set;
 import java.util.TreeSet;
 
 public class Application03 {
@@ -23,6 +24,15 @@ public class Application03 {
         // 자동 오름차순 정렬이 됨.
         System.out.println("tset = " + tset);
 
+        /* 로또 번호 발생 */
+        Set<Integer> lotto = new TreeSet<>();
+
+        while (lotto.size() < 7) {
+
+            lotto.add((int) (Math.random() * 45) + 1);
+        }
+
+        System.out.println("lotto = " + lotto);
     }
 
 }
