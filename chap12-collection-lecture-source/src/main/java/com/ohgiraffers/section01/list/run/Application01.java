@@ -1,9 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class Application01 {
 
@@ -112,6 +109,27 @@ public class Application01 {
         Collections.sort(stringList);
 
         System.out.println("stringList = " + stringList);
+
+
+        stringList = new LinkedList<>(stringList);
+
+        /* 필기.
+        *   Iterator 란?
+        *   Collection 인터페이스의 iterator() 메소드를 이용해서 인스턴스를 생성할 수 있다.
+        *   hasNext() : 다음 요소를 가지고 있으면 true, 더 이상 요소가 없으면 false 를 반환
+        *   next() : 다음 요소(값)를 반환
+        *  */
+
+        Iterator<String> dIter = ((LinkedList<String>)stringList).descendingIterator();
+
+        /* 필기. 역순으로 정렬 된 결과를 저장하기 위해 새로운 ArrayList 를 만들어서 저장 */
+        List<String> descList = new ArrayList<>();
+
+        while (dIter.hasNext()) {
+            descList.add(dIter.next());
+        }
+
+        System.out.println("descList = " + descList);
 
     }
 
